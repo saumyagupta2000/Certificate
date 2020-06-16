@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cerificate</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+<style type="text/css">
+.box {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(186, 195, 235);
+    
+}
+
+p,h3,h2,h4,h5,h1{
+  font-family: 'Bitter', serif;
+  
+}
+p{
+  font-size: 18px;
+  color: #7a7e84;
+}
+
+i{ font-style: bold !important;
+  color:rgb(80, 44, 44);
+  font-size: 25px !important;
+}
+h5{
+color:#2C3E50;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn{
+  border-radius: 8px;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.blue{
+background-color: #0097e6;
+color: white;
+border-radius: 20px;
+}
+
+input{
+  border: 1px solid #2C3E50;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+button{
+  border: 1px solid black;
+  padding: 10px;
+  width:50%;
+  border-radius: 20px;
+  background-color: #a96cf0;
+  color: white;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    input,button {
+        width: 100%;
+    }  
+}
+.name{
+    position: absolute;
+    top:30%;
+    left:170%;
+    font-size: 26px;
+    color:black;
+}
+.inst_name{
+    position: absolute;
+    top:50%;
+    left:170%;
+    font-size: 26px;
+    color:black;
+}
+.duration{
+    position: absolute;
+    top:65%;
+    left:170%;
+    font-size: 20px;
+    color:black;
+}
+img{
+    float:right;
+	  height:438px;
+	  width:640px;
+}
+.container.box {
+  position: absolute;
+  left: 30px;
+  padding: 10px;
+}
+
+</style>
+</head>
+
+<body style="background-color: rgb(160, 146, 158);">
+  <div style="padding:1%;text-align: center;"><br><br>
+    <u><h2 style="color:rgba(0, 0, 0, 0.753);font-size: 50px">DUMMY CERTIFICATE CREATION</h2></ul>
+    <h2 style="color:rgba(0, 0, 0, 0.753);font-size: 35px">Create Your Own Certificate</h2>
+  </div><br>
+
+
+<!-- login Container -->
+
+<!--<div class="container-fluid" id="menu" style="text-align: center;">-->
+    <img  src="internship.jpeg"  >
+                <div class="container box" style="max-width:700px;border-radius: 6px; text-align: center;">
+                    <div id="member" class="container-fluid menu row" style="padding:2%;text-align: center;"></div>  
+                                    <h4>ENTER YOUR DETAILS</h4>
+                                    <h2>(Fill Details Carefully)</h2>
+                                    <hr style="width: 50%">
+                                    <br>
+                                        <input type="text" placeholder="Name" id="inputname" required>
+                                        <p class="name">
+                                            Saumya Gupta
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <input placeholder="Program" type="text"  id="iname" required>
+                                        <p class="inst_name">
+                                            Intern
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <input type="Name" placeholder="Duration" id="iduration" required>
+                                        <p class="duration">
+                                            May 26,2020 - June 30,2020
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <button type="submit" id="submit">Submit</button>
+                                        <br>
+                                        <br>
+                </div>  
+    
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script>
+    $("#submit").click(function hrll(){
+        var name = $("#inputname").val();
+        $(".name").html(name);
+        var inst_name = $("#iname").val();
+        $(".inst_name").html(inst_name);
+        var duration = $("#iduration").val();
+        $(".duration").html(duration);
+    })
+</script>
+</html>

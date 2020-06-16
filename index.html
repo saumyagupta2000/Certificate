@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #btn1 , #btn2 , #btn3{
+        text-align:right;
+        border-color: beige;
+        font-size: 150%;
+    }
+    .col{
+        float:left;
+        width:33.33%;
+        height:500px;
+    }
+</style>
+<body style="background-color:rosybrown">
+    <h1 style="text-align: center; color: beige; font-size: 200%;"><u>SELECT TEMPLATE</u></h1><br><br>
+
+    <div class="container">
+            <div class="col">
+                <img style="height:70% ; width:70% ; padding: 5%" src="internship.jpeg"><br>
+                <button type="button" id="btn1" onclick="pageRedirect1()">TEMPLATE 1</button><br>
+            </div>
+            <div class="col">
+                <img style="height:70% ; width:70% ; padding: 5%" src="course.jpeg"><br>
+                <button type="button" id="btn2" onclick="pageRedirect2()">TEMPLATE 2</button><br>
+            </div>
+            <div class="col">
+                <img style="height:70% ; width:70% ; padding: 5%" src="comp.jpeg"><br>
+                <button type="button" id="btn3" onclick="pageRedirect3()">TEMPLATE 3</button><br>
+            </div>
+    </div>
+</body>
+
+<script>
+    function pageRedirect1() {
+        location.replace("pg2.html");
+    }
+    function pageRedirect2() {
+        location.replace("pg3.html");
+    }
+    function pageRedirect3() {
+        location.replace("pg4.html");
+    }
+</script>
+
+</html>
+
+
